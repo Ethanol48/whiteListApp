@@ -182,7 +182,7 @@ export default function Home() {
       // Assign the Web3Modal class to the reference object by setting it's `current` value
       // The `current` value is persisted throughout as long as this page is open
       web3ModalRef.current = new Web3Modal({
-        network: "rinkeby",
+        network: "mumbai",
         providerOptions: {},
         disableInjectedProvider: false,
       });
@@ -199,23 +199,24 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
+          <img className={styles.image} src="./crypto-devs.svg" />
+        </div>
+        <div>
+          <h1 className={styles.title}>Welcome to my Whitelist-Dapp!</h1>
           <div className={styles.description}>
-            Its an NFT collection for developers in Crypto.
+            Its a project to test my Solidity knowledge for conecting multiple 
+            <br></br>Smart Contracts together.
+            <br></br>
+            <br></br>
+            This project consist in users connecting their wallets and enlist themselves
+            <br></br> in a list to have privileges in minting an in the project NFT-Collection
           </div>
           <div className={styles.description}>
             {numberOfWhitelisted} have already joined the Whitelist
           </div>
           {renderButton()}
         </div>
-        <div>
-          <img className={styles.image} src="./crypto-devs.svg" />
-        </div>
       </div>
-
-      <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
-      </footer>
     </div>
   );
 }
