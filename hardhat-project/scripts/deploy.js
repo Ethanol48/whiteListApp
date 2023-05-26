@@ -15,7 +15,7 @@ so nftContract here is a factory for instances of our NFTee contract.
   await deployedWhiteListContract.deployed();
 
   // print the address of the deployed contract
-  console.log("NFT Contract Address:", deployedNFTContract.address);
+  console.log("Whitelist Contract Address:", deployedWhiteListContract.address);
 }
 
 // Call the main function and catch if there is any error
