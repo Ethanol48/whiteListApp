@@ -32,7 +32,7 @@ contract Whitelist {
         // check if the numAddressesWhitelisted < maxWhitelistedAddresses, if not then throw an error.
         require(
             numAddressesWhitelisted < maxWhitelistedAddresses,
-            "More addresses cant be added, limit reached"
+            "More addresses can't be added, limit reached"
         );
         // Add the address which called the function to the whitelistedAddress array
         whitelistedAddresses[msg.sender] = true;
