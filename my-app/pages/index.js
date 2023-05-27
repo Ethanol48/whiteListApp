@@ -217,6 +217,11 @@ export default function Home() {
           {renderButton()}
         </div>
       </div>
+      <div style={{textAlign: "center"}}>
+        <a className={styles.tag} href="https://nft-minting-collection.vercel.app" >
+          Visit the NFT page to mint!!
+        </a>
+      </div>
     </div>
   );
 }
